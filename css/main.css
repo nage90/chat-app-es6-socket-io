@@ -1,0 +1,102 @@
+body{
+    font-family: Raleway, sans-serif;
+
+}
+
+.app-container{
+    position: relative;
+    background: whitesmoke;
+    width: 40%;
+    height: 80vh;
+    margin: 10vh auto;
+    -webkit-box-shadow: -1px 2px 12px 0px rgba(50, 50, 50, 0.25);
+    -moz-box-shadow:    -1px 2px 12px 0px rgba(50, 50, 50, 0.25);
+    box-shadow:         -1px 2px 12px 0px rgba(50, 50, 50, 0.25);
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .app-container{
+        width: 95%;
+    }
+}
+
+
+.app-header{
+    padding: 15px;
+    border-bottom: 1px solid lightgrey;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.message-list{
+    height: calc(100% - 160px);
+    width: calc(100% - 30px);
+    padding: 15px;
+    overflow: auto;
+}
+
+
+.message-list .message{
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.message-list .sent-message{
+    text-align: right;
+}
+
+.message-list .received-message{
+    text-align: left;
+}
+
+.input-fields{
+    padding: 15px;
+    border-top: 1px solid lightgray;
+}
+
+input {
+    height: 40px;
+    padding: 12px 20px;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+input.name{
+    width: 25%;
+}
+
+input.message{
+    width: 50%;
+}
+
+input.missing{
+    border: 1px solid palevioletred;
+}
+
+
+button{
+    height: 40px;
+    width: calc(25% - 10px);
+    background: lightskyblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover{
+    cursor: pointer;
+    background: dodgerblue;
+}
+
+
+
+
+
